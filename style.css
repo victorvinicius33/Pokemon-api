@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+
+    background: rgb(92, 230, 92);
+
+    font-family: sans-serif;
+
+    background-image: linear-gradient(360deg, rgb(15, 202, 171), rgb(20, 40, 223));
+}
+
+.container-blue {
+    position: relative;
+    padding: 20px 20px;
+    padding-bottom: 270px;
+    
+    border-radius: 8px;
+    box-shadow: 14px 10px 14px 0 rgba(243, 237, 237, 0.3) inset,
+    -6px -6px 10px 0 rgba(0, 0, 0, 0.15) inset;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.6);
+    background: rgb(11, 18, 110);
+}
+
+.container-black {
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+
+    padding: 30px 50px;
+    border-radius: 10px;
+    
+
+    border: 1px solid black;
+
+    background-image: linear-gradient(315deg, #1b1919 0%, #000000 74%);
+}
+
+.screen {
+    background-color: white;
+    width: 223px;
+    height: 200px;
+    background: -moz-linear-gradient(top,  #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(50%,#2989d8), color-stop(51%,#207cca), color-stop(100%,#7db9e8));
+    background: -webkit-linear-gradient(top,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%);
+    background: -o-linear-gradient(top,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%);
+    background: -ms-linear-gradient(top,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%);
+    
+    border: 1px solid #000;
+    margin-top: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+
+    font-family: 'Pokemon Solid', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.info img {
+    width: 90px;
+    
+    margin-left: 10px;
+}
+
+.pokemon {
+    height: 42px;
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.pokemon h1 {
+    font-size: 20px;
+    margin-bottom: -15px;
+
+    -webkit-text-stroke: 0.8px rgb(31, 31, 192);
+    color: rgb(255, 255, 0);
+}
+
+input {
+    position: relative;
+    z-index: 1000;
+}
+
+.row {
+    display: flex;
+    position: relative;
+}
+
+.info h2 {
+    text-align: center;
+}
+
+.habilidades {
+    position: absolute;
+    right: 10px;
+    bottom: 40px;
+}
+
+.habilidades h1 {
+    font-size: 17px;
+    margin-bottom: 0px;
+
+    color: yellow;
+    -webkit-text-stroke: 0.8px rgb(0, 0, 0);
+}
+
+.hide {
+    display: none;
+}
+
+.habilidades h2 {
+    font-size: 15px;
+
+    color: rgb(240, 240, 12);
+    -webkit-text-stroke: 0.8px rgb(0, 0, 0);
+}
+
+.nome {
+    font-size: 20px;
+
+    margin-left: 15px;
+    margin-top: 35px;
+
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke: 0.1px rgb(255, 255, 255);
+}
+
+.power {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    position: absolute;
+    left: 0;
+    top: 90px;
+
+    margin-left: 4px;
+
+    color: rgb(158, 154, 154);
+}
+
+.led-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.led {
+    width: 5px;
+    height: 5px;
+
+    margin-right: 10px;
+
+    border-radius: 50%;
+
+    background: red;
+}
+
+.power h3 {
+    font-size: 9px;
+}
+
+.power p {
+    font-weight: bold;
+}
+
+.direcional {
+    position: absolute;
+
+    left: 65px;
+    bottom: 120px;
+}
+
+.cruz {
+    background-color: black;
+    height: 80px;
+    position: relative;
+    width: 30px;
+    margin: auto;
+}
+
+.cruz::after {
+    background: black;
+    content: '';
+    height: 30px;
+    left: -25px;
+    position: absolute;
+    top: 25px;
+    width: 80px;
+}
+
+.btn-b, .btn-a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+
+    background: black;
+    color: rgb(29, 27, 27);
+}
+
+.btn-b {
+    position: absolute;
+    right: 110px;
+    bottom: 140px;
+}
+
+.btn-a {
+    position: absolute;
+    right: 40px;
+    bottom: 160px;
+}
+
+.menu {
+    display: flex;
+    position: absolute;
+    bottom: 50px;
+    left: 135px;
+}
+
+.btn-menu {
+    width: 30px;
+
+    margin-bottom: 2px;
+
+    padding: 5px 10px;
+
+    background: black;
+
+    border-radius: 10px;
+}
+
+.btn-menu-1 {
+    margin-left: 7px;
+}
+
+.btn-menu-2 {
+    margin-left: 2px;
+}
+
+b {
+    font-size: 12px;
+    font-weight: 900;
+    color: rgb(34, 32, 32);
+}
+
+.select {
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.erro {
+    border: 1px solid red;
+    outline-color:  red;
+}
