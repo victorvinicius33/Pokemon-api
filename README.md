@@ -1,6 +1,6 @@
 # Pokemon api
 
-Website to search pokémons e see their skills, using the api: https://pokeapi.co/.
+Website to search pokémons e see their skills. Built with HTML, CSS and Javascript using the api: https://pokeapi.co/.
 
 ## Link to see the project working
 
